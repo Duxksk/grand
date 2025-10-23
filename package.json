@@ -1,0 +1,32 @@
+{
+  "name": "greensurf",
+  "version": "1.0.0",
+  "description": "A simple green Chromium-based browser built with Electron.",
+  "author": "Your Name",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.greensurf.app",
+    "productName": "GreenSurf",
+    "publish": "never",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "dependencies": {}
+}
